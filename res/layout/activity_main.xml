@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#EAEAEA"
+    android:layout_height="match_parent" >
+    
+    <ImageView 
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/fundo"
+        android:background="@drawable/fundo"
+        android:id="@+id/ivFundo"/>
+    
+    <ImageView         
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"        
+        android:layout_marginTop="15dp"
+        android:src="@drawable/logo"
+        android:background="@drawable/logo"
+        android:id="@+id/ivLogo"/>
+    
+    <TextView
+        android:layout_below="@+id/ivFundo"
+        android:id="@+id/tvSorteio"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="30dp"
+        android:layout_height="wrap_content"
+        android:text="0 até" />
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSorteio"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="ex: 100"
+        android:layout_width="100dp"
+        android:id="@+id/etSorteio"/>
+    
+     <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/etSorteio"        
+        android:layout_marginTop="10dp"
+        android:src="@drawable/selector_confirmar"
+        android:background="@drawable/selector_confirmar"
+        android:id="@+id/btnIniciar"/>
+    
+</RelativeLayout>
